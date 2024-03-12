@@ -1,7 +1,10 @@
+import auth from '../auth.mjs';
 import Productos from '../models/Productos.mjs';
 import Fabrica from '../models/Fabrica.mjs';
 import { parse } from 'querystring';
 export default async function (req, res) {
+    if (auth(req, res) > 0)
+        return;
     res.setHeader('Content-type', 'application/json');
     let body = [];
     req.on('data', chunk => body.push(chunk));

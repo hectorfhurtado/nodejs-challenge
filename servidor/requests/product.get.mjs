@@ -1,11 +1,14 @@
+import auth from '../auth.mjs';
 import Productos from '../models/Productos.mjs';
 
 export default async function ( req, res )
 {
+    if ( auth( req, res ) > 0 )
+        return;
+
     res.setHeader( 'Content-type', 'application/json' );
 
-    const productos = await Productos.find()
-
+    const productos          = await Productos.find()
     const productosOrdenados = {};
 
     for (let producto of productos)

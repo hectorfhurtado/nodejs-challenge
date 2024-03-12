@@ -12,6 +12,7 @@
   "author": "Hector Hurtado",
   "license": "ISC",
   "dependencies": {
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.2.1",
     "typescript": "^5.4.2"
   },
