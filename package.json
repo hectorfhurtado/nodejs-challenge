@@ -1,0 +1,16 @@
+{
+  "name": "workana-nodejs-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./servidor/index.js",
+  "scripts": {
+    "start": "node --env-file=.env servidor/index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Hector Hurtado",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.2.1"
+  }
+}
