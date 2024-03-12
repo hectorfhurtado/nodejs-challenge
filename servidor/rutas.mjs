@@ -3,9 +3,9 @@ import path from 'path';
 
 import productGet from './requests/product.get.mjs';
 import addProduct from './requests/product.post.mjs';
+import deleteProduct from './requests/product.delete.mjs';
 
 const PUBLICO = '../publico';
-
 
 export default async function ( req, res )
 {
@@ -23,6 +23,9 @@ export default async function ( req, res )
 
     if ( /producto$/.test( URL ) && METHOD === 'POST' )
         addProduct( req, res )
+    
+    if ( /producto$/.test( URL ) && METHOD === 'DELETE' )
+        deleteProduct( req, res )
     
 }
 
