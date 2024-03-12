@@ -21,8 +21,9 @@ https://github.com/sebasworkana/nodejs-challenge.git and in your personal reposi
 ## SETUP
 
 1. Import all Mongo collections from **mongo** directory. There are three collections: 'Indexes, Productos and Fabricas'.
-2. Create a new .env file using the example provided
-3. Start the server with `pnpm start`
+2. `pnpm install` all the dependencies
+3. Create a new .env file using the example provided
+4. Start the server with `pnpm start`
 
 **Notes**
 - If there are any changes in the typescript file, bundle it using `pnpm bundle`.
