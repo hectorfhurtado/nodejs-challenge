@@ -4,10 +4,6 @@ import https from 'https';
 import fs from 'fs';
 import path from 'path';
 
-import Fabrica from './models/Fabrica.mjs';
-import Productos from './models/Productos.mjs';
-import Indexes from './models/Indexes.mjs';
-
 import networkInterfaz from './networkInterfaz.mjs';
 import estableceCabecera from './cabeceras.mjs';
 import clasificaRutas from './rutas.mjs';

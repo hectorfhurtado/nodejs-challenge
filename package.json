@@ -6,7 +6,10 @@
   "scripts": {
     "bundle": "tsc ./servidor/requests/product.delete.mts --target esnext --module nodenext",
     "start": "node --env-file=.env servidor/index.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "pnpm test1 && pnpm test2 && pnpm test3",
+    "test1": "node --test-reporter=spec --env-file=.env ./servidor/requests/product.get.test.mjs",
+    "test2": "node --test-reporter=spec --env-file=.env ./servidor/requests/product.post.test.mjs",
+    "test3": "node --test-reporter=spec --env-file=.env ./servidor/requests/product.delete.test.mjs"
   },
   "keywords": [],
   "author": "Hector Hurtado",

@@ -21,6 +21,8 @@ export default function ( req, res )
     }
     catch (e)
     {
+        console.error( e );
+
         res.statusCode = 401;
         res.end( JSON.stringify({ Message: 'El token suministrado es inválido' }));
     

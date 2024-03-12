@@ -19,7 +19,7 @@ export default async function ( req, res )
             Existencias: producto.Existencias.toString(),
             Precio:      producto.Precio.toString(),
             IdFab:       producto.IdFab.toString(),
-            };
+        };
 
         if ( newProducto.IdFab in productosOrdenados )
             productosOrdenados[ newProducto.IdFab ].push( newProducto );
