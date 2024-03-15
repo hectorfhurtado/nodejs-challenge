@@ -14,6 +14,6 @@ the main server file.
 8. Create 3 Unit Test using the preferred Testing library to test 3 endpoints.
 9. Ideally create a “docker compose” file to create DB and run API easily.
 10. Create a fork from original repo
-https://github.com/sebasworkana/nodejs-challenge.git and in your personal repository (forked repository) Create a new branch from master with you name and last name, and send a PR to this repo (master branch).
+https://github.com/sebasworkana/nodejs-challenge.git and in your personal repository (forked repository) Create a new branch from master with you name and last name, and send a PR to `**`FORKED`**`(very important!) repo (master branch).
  
 11. Finally give access to the repo to sebasworkana user in github.
