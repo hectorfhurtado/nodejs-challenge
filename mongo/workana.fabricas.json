@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "65f08e73fce500f10c8148d7"
+  },
+  "Descripcion": "Acme company",
+  "Id": 1,
+  "Productos": [
+    1,
+    2
+  ]
+},
+{
+  "_id": {
+    "$oid": "65f08e91fce500f10c8148d8"
+  },
+  "Descripcion": "Company INC",
+  "Id": 2,
+  "Productos": [
+    3
+  ]
+}]

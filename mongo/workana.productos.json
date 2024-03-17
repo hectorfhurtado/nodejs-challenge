@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "65ef95ab19ea1cf12c331e65"
+  },
+  "Id": 1,
+  "Descripcion": "Primer producto",
+  "Precio": 150,
+  "Existencias": 100,
+  "IdFab": 1
+},
+{
+  "_id": {
+    "$oid": "65ef95f319ea1cf12c331e66"
+  },
+  "Id": 2,
+  "Descripcion": "Segundo producto",
+  "Precio": 120,
+  "Existencias": 100,
+  "IdFab": 1
+},
+{
+  "_id": {
+    "$oid": "65ef962319ea1cf12c331e67"
+  },
+  "Id": 3,
+  "Descripcion": "Tercer producto",
+  "Precio": 100,
+  "Existencias": 100,
+  "IdFab": 2
+}]

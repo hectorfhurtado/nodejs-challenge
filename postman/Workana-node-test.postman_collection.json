@@ -1,0 +1,658 @@
+{
+	"info": {
+		"_postman_id": "712778c5-2bd6-4196-8782-606eb34e89e2",
+		"name": "Workana-node-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29968898"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwd2QiOiIxMjM0NTYiLCJpYXQiOjE3MTAyNzY0NTR9.30XCJ1DtuAG6_yXgP9ETmyH6J-l65_YF0HHkxAhMH4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://172.27.128.1:7022/producto",
+					"protocol": "https",
+					"host": [
+						"172",
+						"27",
+						"128",
+						"1"
+					],
+					"port": "7022",
+					"path": [
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwd2QiOiIxMjM0NTYiLCJpYXQiOjE3MTAyNzY0NTR9.30XCJ1DtuAG6_yXgP9ETmyH6J-l65_YF0HHkxAhMH4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Descripcion",
+							"value": "Nuevisimo Producto",
+							"type": "text"
+						},
+						{
+							"key": "Precio",
+							"value": "250.50",
+							"type": "text"
+						},
+						{
+							"key": "Existencias",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "IdFab",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://172.27.128.1:7022/producto",
+					"protocol": "https",
+					"host": [
+						"172",
+						"27",
+						"128",
+						"1"
+					],
+					"port": "7022",
+					"path": [
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error Product Descripcion",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwd2QiOiIxMjM0NTYiLCJpYXQiOjE3MTAyNzY0NTR9.30XCJ1DtuAG6_yXgP9ETmyH6J-l65_YF0HHkxAhMH4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Descripcion",
+							"value": "Nuevisimo Producto",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "Precio",
+							"value": "250.50",
+							"type": "text"
+						},
+						{
+							"key": "Existencias",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "IdFab",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://172.27.128.1:7022/producto",
+					"protocol": "https",
+					"host": [
+						"172",
+						"27",
+						"128",
+						"1"
+					],
+					"port": "7022",
+					"path": [
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error Product Existencias No Suministrado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwd2QiOiIxMjM0NTYiLCJpYXQiOjE3MTAyNzY0NTR9.30XCJ1DtuAG6_yXgP9ETmyH6J-l65_YF0HHkxAhMH4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Descripcion",
+							"value": "Nuevisimo Producto",
+							"type": "text"
+						},
+						{
+							"key": "Precio",
+							"value": "250.50",
+							"type": "text"
+						},
+						{
+							"key": "Existencias",
+							"value": "20",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "IdFab",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://172.27.128.1:7022/producto",
+					"protocol": "https",
+					"host": [
+						"172",
+						"27",
+						"128",
+						"1"
+					],
+					"port": "7022",
+					"path": [
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error Product Existencias Como texto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwd2QiOiIxMjM0NTYiLCJpYXQiOjE3MTAyNzY0NTR9.30XCJ1DtuAG6_yXgP9ETmyH6J-l65_YF0HHkxAhMH4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Descripcion",
+							"value": "Nuevisimo Producto",
+							"type": "text"
+						},
+						{
+							"key": "Precio",
+							"value": "250.50",
+							"type": "text"
+						},
+						{
+							"key": "Existencias",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "IdFab",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://172.27.128.1:7022/producto",
+					"protocol": "https",
+					"host": [
+						"172",
+						"27",
+						"128",
+						"1"
+					],
+					"port": "7022",
+					"path": [
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error Product Existencias Como decimal",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwd2QiOiIxMjM0NTYiLCJpYXQiOjE3MTAyNzY0NTR9.30XCJ1DtuAG6_yXgP9ETmyH6J-l65_YF0HHkxAhMH4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Descripcion",
+							"value": "Nuevisimo Producto",
+							"type": "text"
+						},
+						{
+							"key": "Precio",
+							"value": "250.50",
+							"type": "text"
+						},
+						{
+							"key": "Existencias",
+							"value": "200.1",
+							"type": "text"
+						},
+						{
+							"key": "IdFab",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://172.27.128.1:7022/producto",
+					"protocol": "https",
+					"host": [
+						"172",
+						"27",
+						"128",
+						"1"
+					],
+					"port": "7022",
+					"path": [
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error Product Precio No suministrado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwd2QiOiIxMjM0NTYiLCJpYXQiOjE3MTAyNzY0NTR9.30XCJ1DtuAG6_yXgP9ETmyH6J-l65_YF0HHkxAhMH4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Descripcion",
+							"value": "Nuevisimo Producto",
+							"type": "text"
+						},
+						{
+							"key": "Precio",
+							"value": "250.50",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "Existencias",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "IdFab",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://172.27.128.1:7022/producto",
+					"protocol": "https",
+					"host": [
+						"172",
+						"27",
+						"128",
+						"1"
+					],
+					"port": "7022",
+					"path": [
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error Product Precio Invalido como texto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwd2QiOiIxMjM0NTYiLCJpYXQiOjE3MTAyNzY0NTR9.30XCJ1DtuAG6_yXgP9ETmyH6J-l65_YF0HHkxAhMH4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Descripcion",
+							"value": "Nuevisimo Producto",
+							"type": "text"
+						},
+						{
+							"key": "Precio",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "Existencias",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "IdFab",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://172.27.128.1:7022/producto",
+					"protocol": "https",
+					"host": [
+						"172",
+						"27",
+						"128",
+						"1"
+					],
+					"port": "7022",
+					"path": [
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error Product IdFab no suministrado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwd2QiOiIxMjM0NTYiLCJpYXQiOjE3MTAyNzY0NTR9.30XCJ1DtuAG6_yXgP9ETmyH6J-l65_YF0HHkxAhMH4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Descripcion",
+							"value": "Nuevisimo Producto",
+							"type": "text"
+						},
+						{
+							"key": "Precio",
+							"value": "35.50",
+							"type": "text"
+						},
+						{
+							"key": "Existencias",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "IdFab",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://172.27.128.1:7022/producto",
+					"protocol": "https",
+					"host": [
+						"172",
+						"27",
+						"128",
+						"1"
+					],
+					"port": "7022",
+					"path": [
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error Product IdFab Invalido como texto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwd2QiOiIxMjM0NTYiLCJpYXQiOjE3MTAyNzY0NTR9.30XCJ1DtuAG6_yXgP9ETmyH6J-l65_YF0HHkxAhMH4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Descripcion",
+							"value": "Nuevisimo Producto",
+							"type": "text"
+						},
+						{
+							"key": "Precio",
+							"value": "35.50",
+							"type": "text"
+						},
+						{
+							"key": "Existencias",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "IdFab",
+							"value": "Test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://172.27.128.1:7022/producto",
+					"protocol": "https",
+					"host": [
+						"172",
+						"27",
+						"128",
+						"1"
+					],
+					"port": "7022",
+					"path": [
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error Product IdFab Invalido como decimal",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwd2QiOiIxMjM0NTYiLCJpYXQiOjE3MTAyNzY0NTR9.30XCJ1DtuAG6_yXgP9ETmyH6J-l65_YF0HHkxAhMH4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Descripcion",
+							"value": "Nuevisimo Producto",
+							"type": "text"
+						},
+						{
+							"key": "Precio",
+							"value": "35.50",
+							"type": "text"
+						},
+						{
+							"key": "Existencias",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "IdFab",
+							"value": "2.5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://172.27.128.1:7022/producto",
+					"protocol": "https",
+					"host": [
+						"172",
+						"27",
+						"128",
+						"1"
+					],
+					"port": "7022",
+					"path": [
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwd2QiOiIxMjM0NTYiLCJpYXQiOjE3MTAyNzY0NTR9.30XCJ1DtuAG6_yXgP9ETmyH6J-l65_YF0HHkxAhMH4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://172.27.128.1:7022/producto",
+					"protocol": "https",
+					"host": [
+						"172",
+						"27",
+						"128",
+						"1"
+					],
+					"port": "7022",
+					"path": [
+						"producto"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

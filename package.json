@@ -1,0 +1,25 @@
+{
+  "name": "workana-nodejs-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./servidor/index.js",
+  "scripts": {
+    "bundle": "tsc ./servidor/requests/product.delete.mts --target esnext --module nodenext",
+    "start": "node --env-file=.env servidor/index.mjs",
+    "test": "pnpm test1 && pnpm test2 && pnpm test3",
+    "test1": "node --test-reporter=spec --env-file=.env ./servidor/requests/product.get.test.mjs",
+    "test2": "node --test-reporter=spec --env-file=.env ./servidor/requests/product.post.test.mjs",
+    "test3": "node --test-reporter=spec --env-file=.env ./servidor/requests/product.delete.test.mjs"
+  },
+  "keywords": [],
+  "author": "Hector Hurtado",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.1",
+    "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.26"
+  }
+}

@@ -17,3 +17,16 @@ the main server file.
 https://github.com/sebasworkana/nodejs-challenge.git and in your personal repository (forked repository) Create a new branch from master with you name and last name, and send a PR to **`FORKED`**(very important!) repo (main branch).
  
 11. Finally give access to the repo to sebasworkana user in github.
+
+## SETUP
+
+1. Import all Mongo collections from **mongo** directory. There are three collections: 'Indexes, Productos and Fabricas'.
+2. `pnpm install` all the dependencies
+3. Create a new .env file using the example provided
+4. Start the server with `pnpm start`
+
+**Notes**
+- If there are any changes in the typescript file, bundle it using `pnpm bundle`.
+- To run all unit tests, please run `pnpm test`.
+- Postman collection is inside **postman** folder.
+- To create a new JWT token run `node ./crearToken`
